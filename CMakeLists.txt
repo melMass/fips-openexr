@@ -39,9 +39,11 @@ endif()
 
 ilm_version()
 
+message(STATUS "${BoldYellow}ILM Base Config ${ILMBASE_VERSION}${ColourReset}")
 fips_add_subdirectory(openexr/IlmBase/config)
 
 # Half
+message(STATUS "${BoldYellow}Half ${ILMBASE_VERSION}${ColourReset}")
 fips_begin_lib(Half)
     fips_dir(openexr/IlmBase/Half)
     fips_files(
@@ -55,7 +57,9 @@ fips_begin_lib(Half)
     )
    fips_include_directories(openexr/IlmBase/Half)
 fips_end_lib()
+
 # Iex
+message(STATUS "${BoldYellow}Iex ${ILMBASE_VERSION}${ColourReset}")
 fips_begin_lib(Iex)
     fips_dir(openexr/IlmBase/Iex)
     fips_files(
@@ -76,6 +80,7 @@ fips_begin_lib(Iex)
 fips_end_lib()
 
 # IexMath
+message(STATUS "${BoldYellow}IexMath ${ILMBASE_VERSION}${ColourReset}")
 fips_begin_lib(IexMath)
     fips_dir(openexr/IlmBase/IexMath)
     fips_files(
@@ -91,6 +96,7 @@ fips_begin_lib(IexMath)
 fips_end_lib()
 
 # Imath
+message(STATUS "${BoldYellow}Imath ${ILMBASE_VERSION}${ColourReset}")
 fips_begin_lib(Imath)
     fips_dir(openexr/IlmBase/Imath)
     fips_files(
@@ -140,6 +146,7 @@ fips_begin_lib(Imath)
 fips_end_lib()
   
 # IlmThread
+message(STATUS "${BoldYellow}IlmThread ${ILMBASE_VERSION}${ColourReset}")
 fips_begin_lib(IlmThread)
     fips_dir(openexr/IlmBase/IlmThread)
     fips_files(
@@ -162,6 +169,8 @@ fips_end_lib()
 
 fips_add_subdirectory(openexr/OpenEXR/config)
 
+# IlmImf
+message(STATUS "${BoldYellow}IlmImf ${ILMBASE_VERSION}${ColourReset}")
 fips_begin_lib(IlmImf)
     fips_dir(openexr/OpenEXR/IlmImf)
     fips_files(
@@ -261,6 +270,8 @@ fips_begin_lib(IlmImf)
     fips_include_directories(openexr/OpenEXR/IlmImf)
 fips_end_lib()
 
+# IlmImfUtil
+message(STATUS "${BoldYellow}IlmImfUtil ${ILMBASE_VERSION}${ColourReset}")
 fips_begin_lib(IlmImfUtil)
     fips_dir(openexr/OpenEXR/IlmImfUtil)
     fips_files(
