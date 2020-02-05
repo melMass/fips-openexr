@@ -3,3 +3,5 @@
 exports:
     modules:
         openexr: .
+    defines:
+        USE_OPENEXR: 1
